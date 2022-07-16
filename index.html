@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+    
+        <div class="w-75 mx-auto my-4">
+
+            <div class="mb-3">
+                <label for="productName">productName :</label>
+                <input  class="form-control my-2" type="text" id="productName">
+                <div id="validName" class="alert alert-danger">
+                    <p>Product Name Invalid</p>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="productPrice">productPrice :</label>
+                <input  class="form-control my-2" type="number" id="productPrice">
+                <div id="validPrice" class="alert alert-danger">
+                    <p>Product price Invalid</p>
+                </div>
+            </div>
+    
+            <div class="mb-3">
+                <label for="productCategory">productCategory :</label>
+                <input  class="form-control my-2" type="text" id="productCategory">
+                <div id="validCategory" class="alert alert-danger">
+                    <p>Product Category Invalid</p>
+                </div>
+    
+            </div>
+    
+            <div class="mb-3">
+                <label for="productDesc">productDesc :</label>
+                <textarea  class="form-control my-2" type="text" id="productDesc"></textarea>
+                <span class="small text-muted">productName must start with uppercase </span>
+                <div id="validDesc" class="alert alert-danger">
+                    <p>Product Description Invalid</p>
+                </div>
+    
+            </div>
+            <button id="btn" onclick="add() ;" class="btn btn-primary">add product</button>
+          <!--  <button id="btn" onclick="addEdit() ;" class="btn btn-primary">add Update</button>-->
+        </div>
+    
+        <div class="w-75 mx-auto">
+            <label>Search by product Name</label>
+            <input onkeyup="searchProduct(this.value)" class=" form-control " type="text" name="" id="">
+        </div>
+
+        <div class="w-75 mx-auto my-5">
+        <table class="table">
+            <thead>
+                <th>Index</th>
+                <th>productName</th>
+                <th>productPrice</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tableBody">
+                
+            </tbody>
+
+        </table>
+   
+    </div>
+        <script src="main.js"></script>
+    </body>
+</html>
+
+
+<!--
+    onfoucs=>awl ma a7ot l mo2shr
+    onblur=> lma ashel l foucs
+-->

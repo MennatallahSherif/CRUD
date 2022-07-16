@@ -1,0 +1,12 @@
+textarea
+{
+    resize: none;
+}
+#validName{
+
+    display: none;
+}
+#validPrice{
+    display: none;}
+#validCategory{display: none;}
+#validDesc{display: none;}
